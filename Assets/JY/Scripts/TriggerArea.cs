@@ -31,8 +31,8 @@ public class TriggerArea : XRBaseInteractor
     {
         if (TryGetInteractable(other, out XRBaseInteractable interactable))
         {
-            if (currentInteractable == null)
-                currentInteractable = interactable;
+            if (currentInteractable == interactable)
+                currentInteractable = null;
         }
     }
 
