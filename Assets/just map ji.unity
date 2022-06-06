@@ -3368,6 +3368,8 @@ Transform:
   - {fileID: 874636878}
   - {fileID: 686378763}
   - {fileID: 9008442746506708447}
+  - {fileID: 1225410023}
+  - {fileID: 1114346024}
   m_Father: {fileID: 1816248011}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9475,6 +9477,51 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1094085096}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1114346023
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1114346024}
+  - component: {fileID: 1114346025}
+  m_Layer: 0
+  m_Name: KeyInventory
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1114346024
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1114346023}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 340941860}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1114346025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1114346023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d74345c8f410cfc4489e75baa67bd644, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasFirstKey: 0
 --- !u!1 &1124981345
 GameObject:
   m_ObjectHideFlags: 0
@@ -10175,6 +10222,7 @@ GameObject:
   - component: {fileID: 1222581288}
   - component: {fileID: 1222581287}
   - component: {fileID: 1222581286}
+  - component: {fileID: 1222581289}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -10266,6 +10314,25 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1222581289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1222581284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c97e9e2f78bec1e4582db69cb24ef52f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rayLength: 5
+  layerMaskInteract:
+    serializedVersion: 2
+    m_Bits: 0
+  excluseLayerName: 
+  openDoorKey: 460
+  crosshair: {fileID: 0}
 --- !u!1 &1225410017
 GameObject:
   m_ObjectHideFlags: 0
@@ -10281,8 +10348,9 @@ GameObject:
   - component: {fileID: 1225410019}
   - component: {fileID: 1225410018}
   - component: {fileID: 1225410024}
+  - component: {fileID: 1225410025}
   m_Layer: 0
-  m_Name: KeyForDesk
+  m_Name: Key
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10522,14 +10590,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1225410017}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -587, y: -13.3, z: -3686.3125}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalPosition: {x: -6.970108, y: 3.6229508, z: -19.360222}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1179560159}
   - {fileID: 207037471}
-  m_Father: {fileID: 847312677}
-  m_RootOrder: 0
+  m_Father: {fileID: 340941860}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1225410024
 MeshRenderer:
@@ -10573,6 +10641,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1225410025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225410017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1224436db79a34479639b8c2455d56f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firstDoor: 0
+  firstKey: 1
+  _keyInventory: {fileID: 1114346025}
 --- !u!64 &1227593920
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12309,6 +12392,40 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1369013428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 538459446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1224436db79a34479639b8c2455d56f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firstDoor: 1
+  firstKey: 0
+  _keyInventory: {fileID: 1114346025}
+--- !u!114 &1369013429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 538459446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 539689c14a3a27f47a7b1008ae878d01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  openAnimationName: RightDoorOpen
+  closeAnimationName: DoorClose
+  timeToShowUI: 1
+  showDoorLockedUI: {fileID: 0}
+  _keyInventory: {fileID: 0}
+  waitTimer: 1
+  pauseInteraction: 0
 --- !u!1001 &1378682514
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17326,6 +17443,40 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1874855031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1874855026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1224436db79a34479639b8c2455d56f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firstDoor: 1
+  firstKey: 0
+  _keyInventory: {fileID: 1114346025}
+--- !u!114 &1874855032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1874855026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 539689c14a3a27f47a7b1008ae878d01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  openAnimationName: LeftDoorOpen
+  closeAnimationName: DoorClose
+  timeToShowUI: 1
+  showDoorLockedUI: {fileID: 0}
+  _keyInventory: {fileID: 0}
+  waitTimer: 1
+  pauseInteraction: 0
 --- !u!1001 &1881347150
 PrefabInstance:
   m_ObjectHideFlags: 0
