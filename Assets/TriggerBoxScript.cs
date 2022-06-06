@@ -33,7 +33,7 @@ public class TriggerBoxScript : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.name == "CubeT")
+        if (collision.gameObject.name == "CubeE")
         {
             ani = true;
         }
