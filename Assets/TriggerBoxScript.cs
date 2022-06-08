@@ -7,6 +7,7 @@ public class TriggerBoxScript : MonoBehaviour
     bool ani = false;
     GameObject doorR;
     GameObject doorL;
+    public GameObject ui;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +37,10 @@ public class TriggerBoxScript : MonoBehaviour
         if (collision.gameObject.name == "CubeT")
         {
             ani = true;
+        }
+        else
+        {
+            ui.GetComponent<HeartSystem>().TakeDamage(1);
         }
     }
 }
