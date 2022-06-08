@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/JY/Start.unity
+    guid: 5ec029bf879c7db4e8aea5f12a3c0eb1
+  - enabled: 0
     path: Assets/just map ji.unity
     guid: 12f20bc418afc624aba0f149a40a3e84
   m_configObjects:
