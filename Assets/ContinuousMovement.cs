@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.XR.CoreUtils;
 using UnityEngine;
 using UnityEngine.XR;
 using UnityEngine.XR.Interaction.Toolkit;
@@ -7,7 +8,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class ContinuousMovement : MonoBehaviour
 {
     public LayerMask groundLayer;
-    private XRRig rig;
+    private XROrigin rig;
     public XRNode inputSource;
     private Vector2 inputAxis;
     private CharacterController character;
@@ -18,7 +19,7 @@ public class ContinuousMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rig = GetComponent<XRRig>();
+        rig = GetComponent<XROrigin>();
         character = GetComponent<CharacterController>();
     }
 
@@ -30,7 +31,7 @@ public class ContinuousMovement : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        Quaternion headYaw = Quaternion.Euler(0, rig.cameraGameObject.transform.eulerAngles.y, 0);
+        Quaternion headYaw = Quaternion.Euler(0, rig.Camera.transform.eulerAngles.y, 0);
         Vector3 direction = new Vector3(inputAxis.x, 0, inputAxis.y);
         character.Move(direction * speed * Time.deltaTime);
 
