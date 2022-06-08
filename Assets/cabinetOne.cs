@@ -5,6 +5,8 @@ using UnityEngine;
 public class cabinetOne : MonoBehaviour
 {
     bool ani = false;
+    public GameObject ui;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +30,10 @@ public class cabinetOne : MonoBehaviour
         if (collision.gameObject.name == "TigerCube")
         {
             ani = true;
+        }
+        else
+        {
+            ui.GetComponent<HeartSystem>().TakeDamage(1);
         }
     }
 }

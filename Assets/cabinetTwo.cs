@@ -5,6 +5,8 @@ using UnityEngine;
 public class cabinetTwo : MonoBehaviour
 {
     bool ani = false;
+    public GameObject ui;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +30,10 @@ public class cabinetTwo : MonoBehaviour
         if (collision.gameObject.name == "MouseCube")
         {
             ani = true;
+        }
+        else
+        {
+            ui.GetComponent<HeartSystem>().TakeDamage(1);
         }
     }
 }

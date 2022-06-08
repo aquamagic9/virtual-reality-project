@@ -1130,6 +1130,8 @@ GameObject:
   - component: {fileID: 180506194}
   - component: {fileID: 183919198}
   - component: {fileID: 182866636}
+  - component: {fileID: 183919199}
+  - component: {fileID: 183919200}
   m_Layer: 0
   m_Name: corpse_drawer_door
   m_TagString: Untagged
@@ -1349,6 +1351,33 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 180672652}
   m_Mesh: {fileID: 4300004, guid: 13bfd1087ab16c449aff52fb14fe867f, type: 3}
+--- !u!114 &183919199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 180672652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3d9c4b04a3944c4c88eab2b0bfb3d4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ui: {fileID: 1661468292}
+  animalCube: []
+--- !u!65 &183919200
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 180672652}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 93.1338, y: 72.77468, z: 22.849733}
+  m_Center: {x: 45.159477, y: -23.58276, z: 9.982451}
 --- !u!33 &183996668
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -3058,6 +3087,8 @@ GameObject:
   - component: {fileID: 486859670}
   - component: {fileID: 489738138}
   - component: {fileID: 488701704}
+  - component: {fileID: 489738139}
+  - component: {fileID: 489738140}
   m_Layer: 0
   m_Name: corpse_drawer_door
   m_TagString: Untagged
@@ -3338,6 +3369,33 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 486700360}
   m_Mesh: {fileID: 4300004, guid: 13bfd1087ab16c449aff52fb14fe867f, type: 3}
+--- !u!114 &489738139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486700360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3d9c4b04a3944c4c88eab2b0bfb3d4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ui: {fileID: 1661468292}
+  animalCube: []
+--- !u!65 &489738140
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486700360}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 93.1338, y: 72.77468, z: 20.89688}
+  m_Center: {x: 45.15949, y: -23.58273, z: 9.006516}
 --- !u!33 &489763578
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -3664,6 +3722,8 @@ GameObject:
   - component: {fileID: 534511707}
   - component: {fileID: 535309399}
   - component: {fileID: 536353989}
+  - component: {fileID: 536353990}
+  - component: {fileID: 536353991}
   m_Layer: 0
   m_Name: corpse_drawer_door
   m_TagString: Untagged
@@ -3902,6 +3962,33 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &536353990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534419077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3d9c4b04a3944c4c88eab2b0bfb3d4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ui: {fileID: 1661468292}
+  animalCube: []
+--- !u!65 &536353991
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534419077}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 93.1338, y: 72.77468, z: 17.834064}
+  m_Center: {x: 45.15945, y: -23.58276, z: 7.4751053}
 --- !u!23 &536359009
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5707,6 +5794,7 @@ GameObject:
   - component: {fileID: 713596883}
   - component: {fileID: 714649409}
   - component: {fileID: 717009888}
+  - component: {fileID: 717009889}
   m_Layer: 0
   m_Name: corpse_drawer_door
   m_TagString: Untagged
@@ -5807,6 +5895,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18ddf4466144c4162b7de997470be49a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ui: {fileID: 0}
+--- !u!65 &717009889
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 716842241}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 93.1338, y: 72.77468, z: 20.090834}
+  m_Center: {x: 45.159477, y: -23.58273, z: 8.603494}
 --- !u!4 &717013463
 Transform:
   m_ObjectHideFlags: 0
@@ -6856,6 +6958,8 @@ GameObject:
   - component: {fileID: 909782647}
   - component: {fileID: 906887803}
   - component: {fileID: 907948777}
+  - component: {fileID: 909949098}
+  - component: {fileID: 909949099}
   m_Layer: 0
   m_Name: corpse_drawer_door
   m_TagString: Untagged
@@ -6863,6 +6967,33 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &909949098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909949097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3d9c4b04a3944c4c88eab2b0bfb3d4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ui: {fileID: 1661468292}
+  animalCube: []
+--- !u!65 &909949099
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909949097}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 93.1338, y: 72.77468, z: 21.28636}
+  m_Center: {x: 45.15949, y: -23.58273, z: 9.201257}
 --- !u!1 &909959211
 GameObject:
   m_ObjectHideFlags: 0
@@ -7384,6 +7515,8 @@ GameObject:
   - component: {fileID: 930790337}
   - component: {fileID: 927897549}
   - component: {fileID: 928950111}
+  - component: {fileID: 930884896}
+  - component: {fileID: 930884897}
   m_Layer: 0
   m_Name: corpse_drawer_door
   m_TagString: Untagged
@@ -7391,6 +7524,33 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &930884896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 930884895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3d9c4b04a3944c4c88eab2b0bfb3d4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ui: {fileID: 1661468292}
+  animalCube: []
+--- !u!65 &930884897
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 930884895}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 93.1338, y: 72.77468, z: 22.432405}
+  m_Center: {x: 45.15949, y: -23.58276, z: 9.7737875}
 --- !u!1 &930903453
 GameObject:
   m_ObjectHideFlags: 0
@@ -9657,6 +9817,8 @@ GameObject:
   - component: {fileID: 1229860588}
   - component: {fileID: 1232732896}
   - component: {fileID: 1231696498}
+  - component: {fileID: 1232732897}
+  - component: {fileID: 1232732898}
   m_Layer: 0
   m_Name: corpse_drawer_door
   m_TagString: Untagged
@@ -10148,6 +10310,33 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1229502514}
   m_Mesh: {fileID: 4300004, guid: 13bfd1087ab16c449aff52fb14fe867f, type: 3}
+--- !u!114 &1232732897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1229502514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3d9c4b04a3944c4c88eab2b0bfb3d4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ui: {fileID: 1661468292}
+  animalCube: []
+--- !u!65 &1232732898
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1229502514}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 93.1338, y: 72.77468, z: 25.71953}
+  m_Center: {x: 45.15949, y: -23.58276, z: 11.41735}
 --- !u!33 &1232845546
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -10331,6 +10520,8 @@ GameObject:
   - component: {fileID: 1254220029}
   - component: {fileID: 1257622769}
   - component: {fileID: 1256586339}
+  - component: {fileID: 1257622770}
+  - component: {fileID: 1257622771}
   m_Layer: 0
   m_Name: corpse_drawer_door
   m_TagString: Untagged
@@ -10596,6 +10787,33 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1254585891}
   m_Mesh: {fileID: 4300004, guid: 13bfd1087ab16c449aff52fb14fe867f, type: 3}
+--- !u!114 &1257622770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1254585891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3d9c4b04a3944c4c88eab2b0bfb3d4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ui: {fileID: 1661468292}
+  animalCube: []
+--- !u!65 &1257622771
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1254585891}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 93.1338, y: 72.77468, z: 21.062437}
+  m_Center: {x: 45.159477, y: -23.58276, z: 9.089295}
 --- !u!1001 &1259027404
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13841,6 +14059,8 @@ GameObject:
   - component: {fileID: 1691907633}
   - component: {fileID: 1693211197}
   - component: {fileID: 1694263983}
+  - component: {fileID: 1694263984}
+  - component: {fileID: 1694263985}
   m_Layer: 0
   m_Name: corpse_drawer_door
   m_TagString: Untagged
@@ -13981,6 +14201,33 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1694263984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1692328175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3d9c4b04a3944c4c88eab2b0bfb3d4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ui: {fileID: 1661468292}
+  animalCube: []
+--- !u!65 &1694263985
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1692328175}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 93.1338, y: 72.77468, z: 19.344297}
+  m_Center: {x: 45.15945, y: -23.582766, z: 8.230226}
 --- !u!23 &1694269197
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14958,6 +15205,8 @@ GameObject:
   - component: {fileID: 1767819806}
   - component: {fileID: 1768613394}
   - component: {fileID: 1769657984}
+  - component: {fileID: 1769657985}
+  - component: {fileID: 1769657986}
   m_Layer: 0
   m_Name: corpse_drawer_door
   m_TagString: Untagged
@@ -15568,6 +15817,33 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1769657985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1767398592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3d9c4b04a3944c4c88eab2b0bfb3d4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ui: {fileID: 1661468292}
+  animalCube: []
+--- !u!65 &1769657986
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1767398592}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 93.133804, y: 72.77468, z: 20.120583}
+  m_Center: {x: 45.159515, y: -23.58274, z: 8.618375}
 --- !u!23 &1769667108
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16227,6 +16503,7 @@ GameObject:
   - component: {fileID: 1825143173}
   - component: {fileID: 1826179351}
   - component: {fileID: 1828541834}
+  - component: {fileID: 1828541835}
   m_Layer: 0
   m_Name: corpse_drawer_door
   m_TagString: Untagged
@@ -16328,6 +16605,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32d8aceb66fb948eda96d0e2bebbb559, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &1828541835
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1828438871}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 93.1338, y: 72.77468, z: 17.561308}
+  m_Center: {x: 45.15949, y: -23.58276, z: 7.338731}
 --- !u!4 &1828549159
 Transform:
   m_ObjectHideFlags: 0
@@ -16720,6 +17010,7 @@ GameObject:
   - component: {fileID: 1834775258}
   - component: {fileID: 1833714248}
   - component: {fileID: 1835976713}
+  - component: {fileID: 1835976714}
   m_Layer: 0
   m_Name: corpse_drawer_door
   m_TagString: Untagged
@@ -16739,6 +17030,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b034bb584a6e944c2bccab23f3324d92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ui: {fileID: 0}
+--- !u!65 &1835976714
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835976712}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 93.1338, y: 72.77468, z: 21.91197}
+  m_Center: {x: 45.15949, y: -23.58276, z: 9.514062}
 --- !u!4 &1841400988 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 403928, guid: 947e113398f058643a47464fff50cae1,
