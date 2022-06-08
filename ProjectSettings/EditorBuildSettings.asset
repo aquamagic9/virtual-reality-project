@@ -8,9 +8,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/JY/Start.unity
     guid: 5ec029bf879c7db4e8aea5f12a3c0eb1
-  - enabled: 0
+  - enabled: 1
     path: Assets/just map ji.unity
     guid: 12f20bc418afc624aba0f149a40a3e84
+  - enabled: 1
+    path: Assets/JY/Escape Success.unity
+    guid: 3bbbdfe6edf988f4b893b3d1d42acd6d
+  - enabled: 1
+    path: Assets/JY/Escape Failure.unity
+    guid: d287c5b1dfc922847a24cd74b4fc02d1
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260,
       type: 2}
