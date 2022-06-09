@@ -5138,6 +5138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18ddf4466144c4162b7de997470be49a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ui: {fileID: 0}
 --- !u!23 &486170542
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9181,6 +9182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d4172dc513d84404b5b27fe647e2e82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ui: {fileID: 0}
 --- !u!54 &966474039
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10944,6 +10946,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.06053528, y: 0.009252778, z: 0.12972763}
   m_Center: {x: 0, y: 0.000000022351742, z: 0}
+--- !u!114 &1179560162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179560158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1224436db79a34479639b8c2455d56f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firstDoor: 0
+  firstKey: 1
+  _keyInventory: {fileID: 1114346025}
 --- !u!1 &1180215664
 GameObject:
   m_ObjectHideFlags: 0
@@ -11400,7 +11417,7 @@ MonoBehaviour:
   rayLength: 5
   layerMaskInteract:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   excluseLayerName: 
   openDoorKey: 460
   crosshair: {fileID: 0}
@@ -15288,6 +15305,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b034bb584a6e944c2bccab23f3324d92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ui: {fileID: 0}
 --- !u!23 &1576702367
 MeshRenderer:
   m_ObjectHideFlags: 0
