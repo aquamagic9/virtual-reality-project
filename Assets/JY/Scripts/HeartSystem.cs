@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HeartSystem : MonoBehaviour
 {
     public GameObject[] hearts;
     private int life;
     private bool dead;
+    public GameObject panel;
 
     private void Start()
     {
@@ -16,7 +18,7 @@ public class HeartSystem : MonoBehaviour
     {
         if (dead == true)
         {
-            ; //죽었을때 화면표시
+            SceneManager.LoadScene("Escape Failure");
         }
     }
 

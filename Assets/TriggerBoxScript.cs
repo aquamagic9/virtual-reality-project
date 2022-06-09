@@ -5,14 +5,12 @@ using UnityEngine;
 public class TriggerBoxScript : MonoBehaviour
 {
     bool ani = false;
-    GameObject doorR;
-    GameObject doorL;
+    public GameObject doorR;
+    public GameObject doorL;
     public GameObject ui;
     // Start is called before the first frame update
     void Start()
     {
-        doorR = transform.Find("Door R").gameObject;
-        doorL = transform.Find("Door L").gameObject;
     }
 
     // Update is called once per frame
@@ -40,6 +38,7 @@ public class TriggerBoxScript : MonoBehaviour
         }
         else
         {
+            Debug.Log("flag!");
             ui.GetComponent<HeartSystem>().TakeDamage(1);
         }
     }

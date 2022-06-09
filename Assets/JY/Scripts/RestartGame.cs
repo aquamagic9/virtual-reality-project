@@ -7,6 +7,7 @@ public class RestartGame : MonoBehaviour
 {
    public void ChangeScene()
     {
+        Debug.Log("ClickFlag");
         SceneManager.LoadScene("Start");
     }
 }
