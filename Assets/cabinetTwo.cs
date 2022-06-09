@@ -6,6 +6,8 @@ public class cabinetTwo : MonoBehaviour
 {
     bool ani = false;
     public GameObject ui;
+    public GameObject text;
+
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +32,8 @@ public class cabinetTwo : MonoBehaviour
         if (collision.gameObject.name == "MouseCube")
         {
             ani = true;
+            text.SetActive(true);
+
         }
         else
         {
