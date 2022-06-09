@@ -11291,6 +11291,7 @@ MonoBehaviour:
   - {fileID: 1829626797}
   - {fileID: 2033080570}
   - {fileID: 1744958095}
+  panel: {fileID: 0}
 --- !u!114 &1208829458
 MonoBehaviour:
   m_ObjectHideFlags: 0
