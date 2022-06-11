@@ -5,9 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class RestartGame : MonoBehaviour
 {
-   public void ChangeScene()
+    public GameObject canvas;
+    public void Start()
     {
-        Debug.Log("ClickFlag");
-        SceneManager.LoadScene("Start");
+        canvas.SetActive(false);
+    }
+    public void Restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

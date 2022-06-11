@@ -6,6 +6,8 @@ public class KeyFeedback : MonoBehaviour
     public AudioClip keySound;
     public bool keyHit = false;
 
+    
+
     private Color originalColor;
     private Renderer renderer;
 
@@ -23,6 +25,7 @@ public class KeyFeedback : MonoBehaviour
         audioSource.volume = 0.1f;
         renderer = GetComponent<Renderer>();
         originalColor = renderer.material.color;
+        
     }
 
     //프렘당
@@ -30,9 +33,12 @@ public class KeyFeedback : MonoBehaviour
     {
         if (keyHit && returnColor < Time.time)
         {
+
+            Debug.Log("sound");
             audioSource.PlayOneShot(keySound);
             returnColor = Time.time + colorReturnTime;
             renderer.material.color = Color.green;
+
             keyHit = false;
         }
         if (renderer.material.color != originalColor && returnColor < Time.time)
@@ -41,4 +47,6 @@ public class KeyFeedback : MonoBehaviour
         }
 
     }
-}
+    
+    }
+

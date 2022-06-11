@@ -8,7 +8,7 @@ public class HeartSystem : MonoBehaviour
     public GameObject[] hearts;
     private int life;
     private bool dead;
-    public GameObject panel;
+    public GameObject canvas;
 
     private void Start()
     {
@@ -18,7 +18,7 @@ public class HeartSystem : MonoBehaviour
     {
         if (dead == true)
         {
-            SceneManager.LoadScene("Escape Failure");
+            canvas.SetActive(true);
         }
     }
 

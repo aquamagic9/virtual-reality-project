@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using TMPro;
 using UnityEngine;
 
@@ -13,15 +13,17 @@ public class KeyDetector : MonoBehaviour
     {
         display = GameObject.FindGameObjectWithTag("Display").GetComponentInChildren<TextMeshPro>();
         display.text = "";
-
+        Debug.Log("reset");
         keyPadControll = GameObject.FindGameObjectWithTag("Keypad").GetComponent<KeyPadControll>();
     }
 
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("what");
         if (other.CompareTag("KeypadButton"))
         {
             var key = other.GetComponentInChildren<TextMeshPro>();
+            Debug.Log("what");
             if (key != null)
             {
                 var keyFeedBack = other.gameObject.GetComponent<KeyFeedback>();
@@ -33,17 +35,18 @@ public class KeyDetector : MonoBehaviour
                     }
                     else if (key.text == "Enter")
                     {
-                    var accessGranted = false;
-                    bool onlyNumbers = int.TryParse(display.text, out int value);
-                    if (onlyNumbers == true && display.text.Length > 0) 
-                        {
-                            accessGranted = keyPadControll.CheckIfCorrect(Convert.ToInt32(display.text));
-                        } 
+                        var accessGranted = false;
+                        
+                        if (display.text.Length > 0) 
+                            {
+                                accessGranted = keyPadControll.CheckIfCorrect(Convert.ToString(display.text));
+                            } 
                          
                         if(accessGranted == true)
                         {
-                            display.text = "Start";
-                        } else
+                            display.text = "OK";
+                        } 
+                        else
                         {
                             display.text = "NO";
                         }
@@ -55,14 +58,17 @@ public class KeyDetector : MonoBehaviour
                     else
                     {
                         //t파싱및 글자 텟그트기
-                        bool onlyNumbers =  int.TryParse(display.text, out int value);
-                        if(onlyNumbers == false)
+                        //bool onlyNumbers =  int.TryParse(display.text, out int value);
+                        //if(onlyNumbers == false)
+                        //{
+                        //    display.text = "";
+                        //}
+                        if(display.text == "Start" || display.text == "NO")
                         {
                             display.text = "";
                         }
-
                         //4잠나 뜨게
-                        if(display.text.Length < 4)
+                        if(display.text.Length < 5)
                         display.text += key.text;
                     }
                     keyFeedBack.keyHit = true;

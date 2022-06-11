@@ -6,6 +6,6 @@ public class GameClear : MonoBehaviour
 {
     public void GameExit()
     {
-        Application.Quit();
+        UnityEditor.EditorApplication.isPlaying = false;
     }
 }
